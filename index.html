@@ -1,179 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" type="image/png" href="src/assets/favicon.png"/>
- 
-  
+  <link rel="shortcut icon" type="image/png" href="src/assets/favicon.png" />
+
+
   <title>Painel médico</title>
 </head>
+
 <body>
-    <div>
-      <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
-    </div>
+  <div>
+    <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
+  </div>
 
 
-    <div id="datahora">
-      <script type="text/javascript" >
-        document.write(new Date().getDate() + '-' + (new Date().getMonth() +1)+ '-' + new Date().getFullYear()+ ' <hr>'+ new Date().getHours() + ':' + new Date().getMinutes()+ ':' + new Date().getSeconds());
-      </script>
-    </div> 
-
-  <h1>Painel de atendimento médico urgência</h1>
-  <h2>Pacientes em atendimento</h2>
-   <div>
+  <div id="datahora">
+    <script type="text/javascript">
+      document.write(new Date().getDate() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getFullYear() + ' <hr>' + new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds());
+    </script>
+  </div>
+  <div class="h1barra">
+    <h1 class="h1text">Painel de atendimento médico urgência</h1>
+  </div>
+  <div class="h2barra">
+    <h2>Pacientes em atendimento</h2>
+  </div>
+  <div>
     <table id="">
-          <tbody>
-            <thead>
-              <tr>
-                <th>
-                  Tempo de atendimento
-                </th>
-                <th>
-                  Status / Permanência
-                </th>
-                <th>
-                  Sexo
-                </th>
-                <th>
-                  Nome do paciente
-                </th>
-                <th>
-                  Nível de alerta
-                </th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>
-                <i>Tempo de atendimento</i>
-              </th>
-              <th>
-                <i>Status / Permanência</i>
-              </th>
-              <th>
-                <i>Sexo</i>
-              </th>
-              <th>
-                <i>Nome do paciente</i>
-              </th>
-              <th>
-                <i>Nível de alerta</i>
-              </th>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              Tempo de atendimento
+            </th>
+            <th>
+              Status / Permanência
+            </th>
+            <th>
+              Sexo
+            </th>
+            <th>
+              Nome do paciente
+            </th>
+            <th>
+              Nível de alerta
+            </th>
           </tr>
-          </tfoot>
-          <tbody>
-            {loop="$paciente"}
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-              <tr>
-                <td>{$value.id_}</td>
-                <td>aquiii</td>
-                <td>11111</td>
-                <td>teste dooeooppooeerrerer</td>
-                <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-              </tr>
-           
-              
-              {/loop}
-          </tbody>
+        </thead>
+      <tfoot>
+        <tr>
+          <th>
+            <i>Tempo de atendimento</i>
+          </th>
+          <th>
+            <i>Status / Permanência</i>
+          </th>
+          <th>
+            <i>Sexo</i>
+          </th>
+          <th>
+            <i>Nome do paciente</i>
+          </th>
+          <th>
+            <i>Nível de alerta</i>
+          </th>
+        </tr>
+      </tfoot>
+      <tbody>
+        {loop="$paciente"}
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+        <tr>
+          <td>{$value.id_}</td>
+          <td>aquiii</td>
+          <td>11111</td>
+          <td>teste dooeooppooeerrerer</td>
+          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+        </tr>
+
+        {/loop}
+      </tbody>
     </table>
   </div>
-     <div class="hiddendiv">
+  <div class="hiddendiv">
     <h3 class="animate-h">Hospital Jayme da fonte - Nossa especialidade é você</h3>
-     </div>
-    </div>
+  </div>
+  </div>
 </body>
+
 </html>
