@@ -1,0 +1,90 @@
+
+
+body{
+  background-color: rgb(255, 255, 255);
+
+}
+
+img.logo{
+  width: 17rem;
+}
+
+h1{
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  background-color: rgba(80, 15, 15, 0.884);
+  color: rgb(255, 255, 255);
+}
+
+th{
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  border-radius: 0.2rem;
+  background-color: rgb(180, 179, 179);
+  color: rgb(255, 255, 255);
+}
+
+td{
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  border: rgba(121, 121, 121, 0.63);
+  background-color: rgba(255, 255, 255, 0.63);
+  color: rgb(94, 13, 13);
+  
+}
+
+div{
+  display: inline-block;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.603);
+}
+
+h3{
+  position: fixed;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color:rgb(255, 255, 255);
+}
+
+#datahora{
+  margin-left: 50rem;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.274);
+}
+
+
+/* Texto da animação Jayme da Fonte*/
+h3.animate-h{
+  font-family: sans-serif;
+  margin-top: 0.4rem;
+  height: 2rem;
+  animation: hjf 30s infinite ;
+}
+
+@keyframes hjf {
+  from {
+    transform: translateX(1250px);
+  }
+  to {
+    transform: translateX(-60rem);
+  }
+}
+
+
+/* Barra da animação Jayme da Fonte*/
+div.hiddendiv{
+  background-color: rgba(80, 15, 15, 0.884);
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  height: 2.3rem;
+  border-radius: 0.3rem;
+  
+}
