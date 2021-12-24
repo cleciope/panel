@@ -1,3 +1,7 @@
+<?php 
+include("DB\Connection.php"); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,11 +17,10 @@
 </head>
 
 <body>
+
   <div>
     <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
   </div>
-
-
   <div id="datahora">
     <script type="text/javascript">
       document.write(new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ' / ' + new Date().getDate() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getFullYear());
@@ -71,64 +74,14 @@
         </tr>
       </tfoot>
       <tbody>
-        {loop="$paciente"}
+        {loop="$pacientes"}
         <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
+          <td>{$value.idpac}</td>
+          <td>{$value.nomepac}</td>
+          <td>{$value.despac}</td>
+          <td>{$value.idpac}</td>
+          <td>{$value.idpac}</td>
         </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-        <tr>
-          <td>{$value.id_}</td>
-          <td>aquiii</td>
-          <td>11111</td>
-          <td>teste dooeooppooeerrerer</td>
-          <td>333333333 dskjkjk dskajkdjsakjd kajskjdksjd</td>
-        </tr>
-
         {/loop}
       </tbody>
     </table>
