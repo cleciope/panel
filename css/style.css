@@ -17,7 +17,7 @@ div.h1barra{
 
 h1.h1text{
   font-family: sans-serif;
-  margin-left: 1rem;
+  margin-left: rem;
   margin-top: -0rem;
   color: rgb(255, 255, 255);
 }

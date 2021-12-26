@@ -11,11 +11,7 @@ class Patients{
 public static function getPatients ($where = null, $order = null, $limit = null ){
   return (new Database('Patients')) ->select($where,$order,$limit)
                                     ->fetchALL(PDO::FETCH_CLASS,self::class);
-}
-
-
-
-
+ }
 
 }
 

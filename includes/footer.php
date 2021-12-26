@@ -1,14 +1,15 @@
-
-
-
- 
   </body>
-      <div class="footer-copyright">
-        <div class="container-fluid">
-        Copyright &copy; 2021 - <script type="text/javascript">document.write(new Date().getFullYear());</script>
-          <a target="_blank" href="//www.thiagotec.com"> Equipe de TI </a>
+      <span>
+          <footer>
+            <!-- To the right -->
+            <div>
+              Desenvolvido por <a href="//thiagotec.com.br" target="_blank">Clécio Lins</a>
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; 2021 - <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="//fasortec.com.br" target="_blank">Equipe de TI</a>.</strong> Todos os direitos reservados.
+          </footer>
         </div>
-      </div>
+      </span>
       <!-- closed container </div> -->
 </div>
  </section>
