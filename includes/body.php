@@ -40,7 +40,7 @@
       <tfoot>
         <tr>
           <th>
-            <i>Nível de alerta {$value.$alert}</i>
+            <i>Nível de alerta</i>
           </th>
           <th>
             <i>Nome do paciente</i>
