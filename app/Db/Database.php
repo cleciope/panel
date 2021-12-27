@@ -1,9 +1,11 @@
 <?php 
 
+
 $servername = "localhost";
 $database = "login";
 $username = "root";
 $password = "";
+
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 $sql = $conn->query("Select * From patients");
@@ -16,5 +18,6 @@ $sql = $conn->query("Select * From patients");
 //  echo "Connected successfully";
 //  mysqli_close($conn);
 
- 
+
+
 ?>

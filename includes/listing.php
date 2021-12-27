@@ -40,7 +40,7 @@
       <tfoot>
         <tr>
           <th>
-            <i>Nível de alerta</i>
+            <i>Nível de alerta {$value.$alert}</i>
           </th>
           <th>
             <i>Nome do paciente</i>
@@ -57,7 +57,7 @@
         </tr>
       </tfoot>
       <tbody>
-
+        
       <?php
         //Exibir valores na tela
         //Esta forma isenta o uso destas tags html em seu código. 
