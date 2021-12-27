@@ -1,6 +1,6 @@
 
 <main>
-  <link rel="stylesheet" href="css/style.css" />
+  
 <div>
     <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
   </div>
