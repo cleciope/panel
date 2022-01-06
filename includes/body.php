@@ -69,14 +69,16 @@
         {
           $alert = $patients['alertpac'];
           $name = $patients['namepac'];
+          $status = $patients['status'];
           $time = $patients['time'];
           echo "<tr>";
           echo "<td>".$alert."</td>";
           echo "<td>".$name."</td>";
+          echo "<td>".$status."</td>";
           echo "<td>".$time."</td>";
           echo "</tr>";
         }
-        //mysqli_close($strcon);
+        //mysqli_close($sql);
         echo "</table>";
       ?>
         
