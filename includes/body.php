@@ -1,6 +1,5 @@
 
 <main>
-  
 <div>
     <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
   </div>
@@ -15,7 +14,6 @@
   <div >
     <h2>Pacientes em atendimento</h2>
   </div>
-  
     <table class="table">
       <tbody>
         <thead>
@@ -35,13 +33,9 @@
         </tr>
       </tfoot>
       <tbody>
-        
       <?php
-        //Exibir valores na tela
-        //Esta forma isenta o uso destas tags html em seu código. 
         //O foreach exibe todas as informações, sem precisar especificar o que deve ser exibido, 
         //simplificando o seu código, ex. $alert = $patients['alertpac']
-
         // Obtendo os dados por meio de um loop while
             while ($patients = mysqli_fetch_array($sql))
         {
@@ -49,39 +43,43 @@
           $name = $patients['namepac'];
           $status = $patients['status'];
           $time = $patients['time'];
-          
-          if($alert == ""){
-            $class="";
-          }elseif($alert == "VERMELHO"){
-            $class="red";
+          if($alert == "VERMELHO"){
+            $classalert="red";
           }elseif($alert == "AMARELO"){
-            $class="yellow";
+            $classalert="yellow";
           }elseif($alert == "VERDE"){
-            $class="green";
+            $classalert="green";
+          }elseif($alert == "AZUL"){
+            $classalert="blue";
           }else{
-            $class="blue";
+            $classalert="";
+          }
+          if($time < "00:10:00"){
+            $classtime="bluetime";
+          }elseif($time < "00:23:00"){
+            $classtime="greentime";
+          }elseif($time < "00:25:00"){
+            $classtime="yellowtime";
+          }else{
+            $classtime="redtime";
           }
           echo "
-          <tr class='".$class."'>
-          <td>".$alert."</td>
-          <td>".$name."</td>
-          <td>".$status."</td>
-          <td>".$time."</td>
+          <tr>
+          <td class='".$classalert."'>".$alert."</td>
+          <td class='".$classalert."'>".$name."</td>
+          <td class='".$classalert."'>".$status."</td>
+          <td class='".$classtime."' align='center'>".$time."</td>
           </tr>
           ";
         }
         //mysqli_close($sql);
-        
       ?>
-
       </tbody>
     </table>
- 
   <div class="hiddendiv">
     <h3 class="h3animation">Hospital Jayme da fonte - Nossa especialidade é você</h3>
   </div>
   </div>
-
 </main>
 
 
