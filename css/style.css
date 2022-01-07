@@ -102,3 +102,28 @@ div.hiddendiv{
   height: 2.3rem;
   border-radius: 0.3rem;
 }
+
+
+table{
+  width: 100%;
+}
+
+ /* color panel - alert*/
+
+.red{
+  background-color:rgba(255, 0, 0, 0.747);
+}
+
+.yellow{
+  background-color:rgba(251, 255, 0, 0.795);
+}
+
+.green{
+  background-color:rgba(0, 255, 0, 0.76);
+}
+
+.blue{
+  background-color:rgba(0, 68, 255, 0.815);
+}
+
+/* end color panel - alert*/

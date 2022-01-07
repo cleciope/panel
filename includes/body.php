@@ -16,44 +16,22 @@
     <h2>Pacientes em atendimento</h2>
   </div>
   
-    <table class="table" id="">
+    <table class="table">
       <tbody>
         <thead>
           <tr>
-            <th>
-               Nível de alerta
-            </th>
-            <th>
-              Nome do paciente
-            </th>
-            <th>
-              Status / Permanência
-            </th>
-            <th>
-              Tempo de atendimento
-            </th>
-            <th>
-             
-            </th>
+            <th>Nível de alerta</th>
+            <th>Nome do paciente</th>
+            <th>Status / Permanência</th>
+            <th>Tempo de atendimento</th>
           </tr>
         </thead>
       <tfoot>
         <tr>
-          <th>
-            <i>Nível de alerta</i>
-          </th>
-          <th>
-            <i>Nome do paciente</i>
-          </th>
-          <th>
-            <i>Status / Permanência</i>
-          </th>
-          <th>
-            <i>Tempo de atendimento</i>
-          </th>
-          <th>
-            <i></i>
-          </th>
+          <th><i>Nível de alerta</i></th>
+          <th><i>Nome do paciente</i></th>
+          <th><i>Status / Permanência</i></th>
+          <th><i>Tempo de atendimento</i></th>
         </tr>
       </tfoot>
       <tbody>
@@ -71,17 +49,31 @@
           $name = $patients['namepac'];
           $status = $patients['status'];
           $time = $patients['time'];
-          echo "<tr>";
-          echo "<td>".$alert."</td>";
-          echo "<td>".$name."</td>";
-          echo "<td>".$status."</td>";
-          echo "<td>".$time."</td>";
-          echo "</tr>";
+          
+          if($alert == ""){
+            $class="";
+          }elseif($alert == "VERMELHO"){
+            $class="red";
+          }elseif($alert == "AMARELO"){
+            $class="yellow";
+          }elseif($alert == "VERDE"){
+            $class="green";
+          }else{
+            $class="blue";
+          }
+          echo "
+          <tr class='".$class."'>
+          <td>".$alert."</td>
+          <td>".$name."</td>
+          <td>".$status."</td>
+          <td>".$time."</td>
+          </tr>
+          ";
         }
         //mysqli_close($sql);
-        echo "</table>";
-      ?>
         
+      ?>
+
       </tbody>
     </table>
  
