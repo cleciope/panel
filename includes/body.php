@@ -1,8 +1,6 @@
 
 <main>
-<div>
-    <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
-  </div>
+
   <div id="datahora">
     <script type="text/javascript">
       document.write(new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ' / ' + new Date().getDate() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getFullYear());

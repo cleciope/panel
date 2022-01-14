@@ -2,7 +2,7 @@
       <span>
           <footer>
             <!-- Developer -->
-            <div>
+            <div data-anime="left">
               Desenvolvido por <a href="//cleciolins.com.br/" target="_blank"><strong>Clécio Lins</strong></a>
             </div>
             <!-- Copyright -->
