@@ -80,12 +80,12 @@ h3.h3animation {
   font-family: sans-serif;
   margin-top: 0.4rem;
   height: 2rem;
-  animation: hjf 30s infinite ;
+  animation: hjf 40s infinite ;
 }
 
 @keyframes hjf {
   0% {
-    transform: translateX(1360px);
+    transform: translateX(1600px);
   }
   100% {
     transform: translateX(-35rem);
