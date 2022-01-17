@@ -12,10 +12,8 @@
     <div>
       <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
     </div>
-    <!-- <div class="datahora" id="data-hora"></div> -->
+    <div class="datahora" id="data-hora"></div>
 </head>
-
-   
 
 
 

@@ -44,6 +44,7 @@ div{
   display: inline-block;
 }
 
+
 h2{
   margin-top: 0.1rem;
   margin-left: 0.3rem;
@@ -67,10 +68,12 @@ h3{
 }
 
 .datahora{
-  margin-left: 56rem;
+  width: 100%;
+  margin-left: 60rem;
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.479);
 }
+
 
 
 /*Texto da animação Jayme da Fonte*/
@@ -159,3 +162,7 @@ table{
   font-size: 1.1rem; color: rgb(255, 255, 255);
 }
 
+.classstatus{
+  background-color:rgba(0, 17, 255, 0.863);
+  font-size: 1.1rem; color: rgb(255, 255, 255);
+}

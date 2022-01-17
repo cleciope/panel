@@ -1,5 +1,6 @@
 <body>
       <main>
+      
         <div class="h1barra">
           <h1 class="h1text">Painel de atendimento médico urgência</h1>
         </div>
@@ -10,7 +11,7 @@
           <tbody>
             <thead>
               <tr>
-                <th>Nívelll de alerta</th>
+                <th>Nível de alerta</th>
                 <th>Nome do paciente</th>
                 <th>Status / Permanência</th>
                 <th>Tempo de atendimento</th>
@@ -64,7 +65,7 @@
           ";
             }
             //mysqli_close($sql);
-            ?>
+            ?>            
           </tbody>
         </table>
         <div class="hiddendiv">

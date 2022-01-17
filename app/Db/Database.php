@@ -17,4 +17,6 @@ $sql = $conn->query("Select * From patients");
 
 //  echo "Connected successfully";
 //  mysqli_close($conn);
+
+   
 ?>

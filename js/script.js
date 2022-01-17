@@ -8,3 +8,12 @@
         document.getElementById('data-hora').innerHTML = dataHora;
       }, 1000);
     /*Time*/
+
+   
+    /*Refresh*/
+      Redirect();
+      function Redirect()
+      {
+              setTimeout("location.reload(true);",60000);   
+      }
+    /*Refresh*/
