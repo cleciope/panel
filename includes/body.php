@@ -12,7 +12,7 @@
           <tbody>
             <thead>
               <tr>
-                <th>Nível de alerta</th>
+                <th>Nívelll de alerta</th>
                 <th>Nome do paciente</th>
                 <th>Status / Permanência</th>
                 <th>Tempo de atendimento</th>
