@@ -1,7 +1,5 @@
 <body>
-  <section class="section">
       <main>
-
         <div class="h1barra">
           <h1 class="h1text">Painel de atendimento médico urgência</h1>
         </div>
