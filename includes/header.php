@@ -15,10 +15,20 @@
     <div>
       <img class="logo" src="src/assets/Logo Jayme da Fonte.png">
     </div>
-    <div id="datahora">
-      <script type="text/javascript">
-        document.write(new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds() + ' / ' + new Date().getDate() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getFullYear());
-      </script>
-    </div>
+
+    <div id="data-hora" class="datahora"></div>
+    <script>
+      const zeroFill = n => {
+        return ('0' + n).slice(-2);
+      }
+      const interval = setInterval(() => {
+        const now = new Date();
+        const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+        document.getElementById('data-hora').innerHTML = dataHora;
+      }, 1000);
+    </script>
+
+
+
   </section>
 </header>
