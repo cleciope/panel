@@ -17,7 +17,9 @@ $sql = $conn->query("Select * From patients");
 
 //  echo "Connected successfully";
 //  mysqli_close($conn);
-
+$sql = $conn->query("SELECT COUNT(*) as nrqtd FROM patients");                  
+//atribui a variavel $num_rows o numero de linhas
+$num_rows = $sql->fetchColumn();
 
    
 ?>

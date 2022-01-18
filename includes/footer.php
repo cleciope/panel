@@ -1,7 +1,7 @@
  
       <span>
           <footer>
-          <div>
+           <div>
             <!-- Copyright -->
             <strong>Copyright &copy; 2021 - <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="//fasortec.com.br" target="_blank">Equipe de TI</a>.</strong> Todos os direitos reservados.
               <!-- Developer -->

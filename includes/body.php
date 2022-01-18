@@ -1,5 +1,4 @@
 <body>
-
   <main>
     <div class="h1barra">
       <h1 class="h1text">Painel de atendimento médico urgência</h1>
@@ -68,24 +67,21 @@
         ?>
       </tbody>
     </table>
-
     
 
-    <!-- //seleciona a coluna da tabela
-    $sql = $status = $conn->query("SELECT status FROM `login`.`patients`");
-
-    //verifica se a mudança de status                       
-    if ($status = "Aguardando consultório médico") {
-      //toca o som de alerta
+    <?php
+      //seleciona o numero de linhas da tabela
+  
+      //verifica se o numero de linhas é maior que 0 (zero)                       
+      if($num_rows > 0 && "Aguardando consultório médico"){
       echo "<embed src='/sons/médico.mp3'width='1' height='1'>";
-    } elseif ($status = "Aguardando triagem") {
+    }elseif ($status > 0 && "Aguardando triagem") {
       echo "<embed src='/sons/triagem.mp3'width='1' height='1'>";
-    } elseif ($status != "Aguardando triagem") {
-      echo "<embed src='/sons/status.mp3'width='1' height='1'>";
-    } elseif ($status != "Aguardando consultório médico") {
+    } else {  
       echo "<embed src='/sons/status.mp3'width='1' height='1'>";
     }
-    -->
+  
+    ?>
 
 
     <div class="hiddendiv">

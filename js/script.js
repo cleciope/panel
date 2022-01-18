@@ -18,6 +18,4 @@
                setTimeout("location.reload(true);",32000);   
        }
     /*Refresh*/
-
-
-
+    
