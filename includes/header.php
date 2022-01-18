@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="css/style.css" />
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/teste.js"></script>
   <link rel="shortcut icon" type="image/png" href="src/assets/favicon.png" />
   <section class="section">
     <div>
