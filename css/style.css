@@ -47,7 +47,7 @@ div{
 
 h2{
   margin-top: 0.1rem;
-  margin-left: 0.3rem;
+  margin-left: 0.9rem;
   font-size: 2rem;
   font-family: sans-serif;
   color: rgba(0, 0, 0, 0.603);
@@ -165,4 +165,8 @@ table{
 .classstatus{
   background-color:rgba(0, 17, 255, 0.863);
   font-size: 1.1rem; color: rgb(255, 255, 255);
+}
+
+.signature{
+  margin-left: 37rem;
 }

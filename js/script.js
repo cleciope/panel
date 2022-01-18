@@ -9,11 +9,10 @@
       }, 1000);
     /*Time*/
 
-   
     /*Refresh*/
-      // Redirect();
-      // function Redirect()
-      // {
-      //         setTimeout("location.reload(true);",10000);   
-      // }
+       Redirect();
+       function Redirect()
+       {
+               setTimeout("location.reload(true);",32000);   
+       }
     /*Refresh*/
