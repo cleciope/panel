@@ -11,9 +11,9 @@
 
    
     /*Refresh*/
-      Redirect();
-      function Redirect()
-      {
-              setTimeout("location.reload(true);",60000);   
-      }
+      // Redirect();
+      // function Redirect()
+      // {
+      //         setTimeout("location.reload(true);",10000);   
+      // }
     /*Refresh*/
