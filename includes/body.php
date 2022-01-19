@@ -1,3 +1,5 @@
+
+
 <body>
   <main>
     <div class="h1barra">
@@ -67,23 +69,6 @@
         ?>
       </tbody>
     </table>
-    
-
-    <?php
-      //seleciona o numero de linhas da tabela
-  
-      //verifica se o numero de linhas é maior que 0 (zero)                       
-      if($num_rows > 0 && "Aguardando consultório médico"){
-      echo "<embed src='/sons/médico.mp3'width='1' height='1'>";
-    }elseif ($status > 0 && "Aguardando triagem") {
-      echo "<embed src='/sons/triagem.mp3'width='1' height='1'>";
-    } else {  
-      echo "<embed src='/sons/status.mp3'width='1' height='1'>";
-    }
-  
-    ?>
-
-
     <div class="hiddendiv">
       <h3 class="h3animation">Hospital Jayme da fonte - Nossa especialidade é você</h3>
     </div>
